@@ -5,8 +5,8 @@ services:
       - "8080:80"
     volumes:
       - ./wordpress-scrape:/usr/share/nginx/html
-    command: |
+    command: >
       /bin/sh -c "
-      echo 'Server running at http://localhost:8080'
-        sleep infinity
+        echo 'Server running at http://localhost:8080'
+        /usr/sbin/nginx -g \"daemon off;\"
       "
