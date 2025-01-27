@@ -1,0 +1,12 @@
+services:
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./wordpress-scrape:/usr/share/nginx/html
+    command: |
+      /bin/sh -c "
+      echo 'Server running at http://localhost:8080'
+        sleep infinity
+      "
