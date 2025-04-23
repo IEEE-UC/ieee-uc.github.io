@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Events Management</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Events Management</h1>
+        <nav>
+            <ul>
+                <li><a href="/admin/calendar">Calendar</a></li>
+                <li><a href="/admin/events">Events</a></li>
+                <li><a href="/admin/roster">Roster</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Manage Events</h2>
+            <form id="eventForm">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" name="eventName" required>
+                
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+                
+                <label for="eventDescription">Description:</label>
+                <textarea id="eventDescription" name="eventDescription" required></textarea>
+                
+                <button type="submit">Add Event</button>
+            </form>
+            <h3>Upcoming Events</h3>
+            <ul id="eventList">
+                <!-- Event items will be populated here -->
+            </ul>
+        </section>
+    </main>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

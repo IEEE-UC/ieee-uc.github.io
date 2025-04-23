@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Roster</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Club Roster</h1>
+    </header>
+    <main>
+        <section id="roster">
+            <h2>Members</h2>
+            <ul>
+                <% roster.forEach(member => { %>
+                    <li><%= member.name %> - <%= member.role %></li>
+                <% }); %>
+            </ul>
+        </section>
+    </main>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

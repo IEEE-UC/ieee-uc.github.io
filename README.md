@@ -1,38 +1,65 @@
-# IEEE Club Website
+# Club Website
 
-This repository contains the code for the IEEE student branch club website at UC `https://ieee.uc.edu/`.
+This project is a customizable club website that features an editable club meeting calendar, event list, and roster list. It is designed to provide both public access to club information and a secure admin area for privileged users to manage content.
 
-## Table of Contents
+## Project Structure
 
-- [Introduction](#introduction)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Configuration](#configuration)
+- **public/**: Contains static files for the public-facing website.
+  - **index.html**: Main HTML entry point.
+  - **styles/**: Contains CSS styles for the website.
+    - **main.css**: Styles for public pages.
+  - **scripts/**: Contains JavaScript for client-side functionality.
+    - **main.js**: Client-side scripts for user interactions.
 
-## Introduction
+- **src/**: Contains the source code for the application.
+  - **app.ts**: Main entry point of the application, initializes the Express app.
+  - **controllers/**: Contains controllers for handling requests.
+    - **calendarController.ts**: Manages calendar-related requests.
+    - **eventsController.ts**: Manages events.
+    - **rosterController.ts**: Manages the club roster.
+  - **routes/**: Contains route definitions.
+    - **api/**: API routes for different functionalities.
+      - **calendarRoutes.ts**: Routes for calendar operations.
+      - **eventsRoutes.ts**: Routes for event operations.
+      - **rosterRoutes.ts**: Routes for roster operations.
+    - **index.ts**: Main application routes setup.
+  - **views/**: Contains EJS templates for rendering pages.
+    - **admin/**: Templates for admin management.
+      - **calendar.ejs**: Admin calendar management page.
+      - **events.ejs**: Admin events management page.
+      - **roster.ejs**: Admin roster management page.
+    - **public/**: Templates for public views.
+      - **calendar.ejs**: Public calendar view.
+      - **events.ejs**: Public events view.
+      - **roster.ejs**: Public roster view.
+  - **types/**: Contains TypeScript types and interfaces.
+    - **index.ts**: Shared types for the application.
 
-This website is designed to showcase the activities and events of the IEEE student branch at UC. It provides essential information about the club, including membership details, upcoming events, and past achievements.
+## Setup Instructions
 
-## Setup
+1. **Clone the repository**:
+   ```
+   git clone <repository-url>
+   ```
 
-To set up the website locally:
+2. **Install dependencies**:
+   ```
+   npm install
+   ```
 
-1. Ensure Docker is installed on your system.
-2. Clone this repository to your local machine.
-3. Navigate to the project directory in your terminal.
-4. Run `docker-compose up` to start the development environment.
+3. **Run the application**:
+   ```
+   npm start
+   ```
 
-## Usage
+4. **Access the website**:
+   Open your browser and go to `http://localhost:3000` to view the public site.
 
-Once the setup is complete:
+## Usage Guidelines
 
-1. Access the website by opening a web browser and navigating to `http://localhost:8000`.
-2. You can view the live site and make modifications as needed.
+- Public users can view the calendar, events, and roster.
+- Admin users can access the admin area to manage the calendar, events, and roster by navigating to the respective admin routes.
 
-## Configuration
+## License
 
-The website uses a JSON configuration file (`info.json`) to manage site-specific information. To update the site content:
-
-1. Locate the `info.json` file in the project root directory.
-2. Edit the file to modify the desired information.
-3. Restart the Docker container for changes to take effect.
+This project is licensed under the MIT License.
