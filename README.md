@@ -1,81 +1,53 @@
-# Club Website
+# Svelte + Vite
 
-This project is a fullstack application for managing a club website, built using Svelte for the frontend and TypeScript with Prisma for the backend. It features a public side accessible to all users and a hidden admin section that requires authentication.
+This template should help get you started developing with Svelte in Vite.
 
-## Project Structure
+## Recommended IDE Setup
 
+[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+
+## Need an official Svelte framework?
+
+Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+
+## Technical considerations
+
+**Why use this over SvelteKit?**
+
+- It brings its own routing solution which might not be preferable for some users.
+- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+
+This template contains as little as possible to get started with Vite + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+
+Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+
+**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+
+Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+
+**Why include `.vscode/extensions.json`?**
+
+Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+
+**Why enable `checkJs` in the JS template?**
+
+It is likely that most cases of changing variable types in runtime are likely to be accidental, rather than deliberate. This provides advanced typechecking out of the box. Should you like to take advantage of the dynamically-typed nature of JavaScript, it is trivial to change the configuration.
+
+**Why is HMR not preserving my local component state?**
+
+HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/sveltejs/svelte-hmr/tree/master/packages/svelte-hmr#preservation-of-local-state).
+
+If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+
+```js
+// store.js
+// An extremely simple external store
+import { writable } from 'svelte/store'
+export default writable(0)
 ```
-club-website
-├── backend
-│   ├── prisma
-│   │   ├── schema.prisma
-│   │   └── migrations
-│   ├── src
-│   │   ├── index.ts
-│   │   ├── routes
-│   │   │   ├── admin.ts
-│   │   │   └── public.ts
-│   │   └── utils
-│   │       └── auth.ts
-│   ├── package.json
-│   ├── tsconfig.json
-│   └── Dockerfile
-├── frontend
-│   ├── public
-│   │   └── index.html
-│   ├── src
-│   │   ├── App.svelte
-│   │   ├── routes
-│   │   │   ├── admin
-│   │   │   │   └── SignIn.svelte
-│   │   │   └── public
-│   │   │       └── Home.svelte
-│   │   └── stores
-│   │       └── auth.ts
-│   ├── package.json
-│   ├── svelte.config.js
-│   └── Dockerfile
-├── docker-compose.yml
-└── README.md
-```
 
-## Features
+## Editable Content
 
-- **Public Side**: A home page that provides general information about the club.
-- **Admin Section**: A secure area for club administrators to manage content, accessible only after signing in.
+This project includes a folder named `editable-content` located in the `src` directory. This folder is designed to make the site easily customizable by nontechnical users. For example, the `officers` subfolder contains a `officers.json` file where you can define the details of officers, such as their name, role, image, quote, and description. These details are dynamically loaded into the site.
 
-## Getting Started
-
-### Prerequisites
-
-- Docker
-- Docker Compose
-
-### Setup
-
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd club-website
-   ```
-
-2. Build and run the application using Docker Compose:
-   ```
-   docker-compose up --build
-   ```
-
-3. Access the public side of the website at `http://localhost:3000`.
-
-4. Access the admin section at `http://localhost:3000/admin/signin`.
-
-### Database Setup
-
-The application uses PostgreSQL as the database. Ensure that the database is configured correctly in the `prisma/schema.prisma` file and that migrations are applied.
-
-### Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
-
-### License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
+To learn more about how JSON works, you can refer to this [JSON tutorial](https://www.w3schools.com/js/js_json_intro.asp).

@@ -1,0 +1,32 @@
+{
+    "officers": [
+        {
+            "name": "Elaine Mansour",
+            "role": "President",
+            "image": "john-smith.jpg",
+            "quote": "Leadership is not about titles, it’s about impact.",
+            "description": "Jane has been leading the team with passion and dedication for over 3 years."
+        },
+        {
+            "name": "John Smith",
+            "role": "Vice President",
+            "image": "john-smith.jpg",
+            "quote": "Teamwork makes the dream work.",
+            "description": "John is a strategic thinker and a great motivator for the team."
+        },
+        {
+            "name": "Alice Johnson",
+            "role": "Secretary",
+            "image": "john-smith.jpg",
+            "quote": "Organization is the key to success.",
+            "description": "Alice ensures everything runs smoothly and keeps everyone on track."
+        },
+        {
+            "name": "Bob Brown",
+            "role": "Treasurer",
+            "image": "john-smith.jpg",
+            "quote": "Every penny counts.",
+            "description": "Bob manages the finances with precision and transparency."
+        }
+    ]
+}
