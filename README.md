@@ -1,65 +1,81 @@
 # Club Website
 
-This project is a customizable club website that features an editable club meeting calendar, event list, and roster list. It is designed to provide both public access to club information and a secure admin area for privileged users to manage content.
+This project is a fullstack application for managing a club website, built using Svelte for the frontend and TypeScript with Prisma for the backend. It features a public side accessible to all users and a hidden admin section that requires authentication.
 
 ## Project Structure
 
-- **public/**: Contains static files for the public-facing website.
-  - **index.html**: Main HTML entry point.
-  - **styles/**: Contains CSS styles for the website.
-    - **main.css**: Styles for public pages.
-  - **scripts/**: Contains JavaScript for client-side functionality.
-    - **main.js**: Client-side scripts for user interactions.
+```
+club-website
+├── backend
+│   ├── prisma
+│   │   ├── schema.prisma
+│   │   └── migrations
+│   ├── src
+│   │   ├── index.ts
+│   │   ├── routes
+│   │   │   ├── admin.ts
+│   │   │   └── public.ts
+│   │   └── utils
+│   │       └── auth.ts
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── Dockerfile
+├── frontend
+│   ├── public
+│   │   └── index.html
+│   ├── src
+│   │   ├── App.svelte
+│   │   ├── routes
+│   │   │   ├── admin
+│   │   │   │   └── SignIn.svelte
+│   │   │   └── public
+│   │   │       └── Home.svelte
+│   │   └── stores
+│   │       └── auth.ts
+│   ├── package.json
+│   ├── svelte.config.js
+│   └── Dockerfile
+├── docker-compose.yml
+└── README.md
+```
 
-- **src/**: Contains the source code for the application.
-  - **app.ts**: Main entry point of the application, initializes the Express app.
-  - **controllers/**: Contains controllers for handling requests.
-    - **calendarController.ts**: Manages calendar-related requests.
-    - **eventsController.ts**: Manages events.
-    - **rosterController.ts**: Manages the club roster.
-  - **routes/**: Contains route definitions.
-    - **api/**: API routes for different functionalities.
-      - **calendarRoutes.ts**: Routes for calendar operations.
-      - **eventsRoutes.ts**: Routes for event operations.
-      - **rosterRoutes.ts**: Routes for roster operations.
-    - **index.ts**: Main application routes setup.
-  - **views/**: Contains EJS templates for rendering pages.
-    - **admin/**: Templates for admin management.
-      - **calendar.ejs**: Admin calendar management page.
-      - **events.ejs**: Admin events management page.
-      - **roster.ejs**: Admin roster management page.
-    - **public/**: Templates for public views.
-      - **calendar.ejs**: Public calendar view.
-      - **events.ejs**: Public events view.
-      - **roster.ejs**: Public roster view.
-  - **types/**: Contains TypeScript types and interfaces.
-    - **index.ts**: Shared types for the application.
+## Features
 
-## Setup Instructions
+- **Public Side**: A home page that provides general information about the club.
+- **Admin Section**: A secure area for club administrators to manage content, accessible only after signing in.
 
-1. **Clone the repository**:
+## Getting Started
+
+### Prerequisites
+
+- Docker
+- Docker Compose
+
+### Setup
+
+1. Clone the repository:
    ```
    git clone <repository-url>
+   cd club-website
    ```
 
-2. **Install dependencies**:
+2. Build and run the application using Docker Compose:
    ```
-   npm install
-   ```
-
-3. **Run the application**:
-   ```
-   npm start
+   docker-compose up --build
    ```
 
-4. **Access the website**:
-   Open your browser and go to `http://localhost:3000` to view the public site.
+3. Access the public side of the website at `http://localhost:3000`.
 
-## Usage Guidelines
+4. Access the admin section at `http://localhost:3000/admin/signin`.
 
-- Public users can view the calendar, events, and roster.
-- Admin users can access the admin area to manage the calendar, events, and roster by navigating to the respective admin routes.
+### Database Setup
 
-## License
+The application uses PostgreSQL as the database. Ensure that the database is configured correctly in the `prisma/schema.prisma` file and that migrations are applied.
 
-This project is licensed under the MIT License.
+### Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
+
+### License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
