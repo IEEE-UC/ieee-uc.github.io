@@ -14,7 +14,7 @@
   <button on:click={() => currentPage = 'magazine'}>IEEE Student Magazine</button>
   <button on:click={() => currentPage = 'contact'}>Contact Us</button>
   <button on:click={() => currentPage = 'calendar'}>Calendar</button>
-  <button class="join-button" on:click={() => currentPage = 'join'}>Join the Organization</button>
+  <button class="join-button" on:click={() => window.location.href = 'https://campuslink.uc.edu/organization/ieee'}>Join the Organization</button>
 </nav>
 
 {#if currentPage === 'home'}
