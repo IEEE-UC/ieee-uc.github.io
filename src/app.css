@@ -1,0 +1,61 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  color-scheme: light;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scrollbar-gutter: stable both-edges;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav button {
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* First child stays left-aligned */
+nav button:first-child {
+  margin-right: auto;
+}
+
+/* All items except first get pushed right */
+nav button:not(:first-child) {
+  margin-left: 1rem;
+}
+
+/* join button gets special styling */
+.join-button {
+  padding: 1rem 1.25rem;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Hover effect for better interactivity */
+nav button:hover {
+  opacity: 0.8;
+}

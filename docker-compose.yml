@@ -1,12 +1,13 @@
+version: '3.8'
+
 services:
-  nginx:
-    image: nginx:alpine
+  svelte-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - "8080:80"
+      - "4173:4173"
     volumes:
-      - ./wordpress-scrape:/usr/share/nginx/html
-    command: >
-      /bin/sh -c "
-        echo 'Server running at http://localhost:8080'
-        /usr/sbin/nginx -g \"daemon off;\"
-      "
+      - .:/app
+      - /app/node_modules
+    command: npm run dev
