@@ -18,7 +18,7 @@
 </nav>
 
 {#if currentPage === 'home'}
-  <Home />
+  <Home goToPage={(page) => currentPage = page} />
 {:else if currentPage === 'officers'}
   <Officers />
 {:else if currentPage === 'calendar'}

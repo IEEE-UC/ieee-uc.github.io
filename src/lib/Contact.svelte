@@ -8,3 +8,4 @@
 <p>Cincinnati, OH 45219</p>
 <p>USA</p>
 <p><strong>Contact Email:</strong> execieee@gmail.com</p>
+<p><strong>President Email:</strong> mansouem@mail.uc.edu</p>
