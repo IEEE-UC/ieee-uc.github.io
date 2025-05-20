@@ -17,7 +17,7 @@
   });
 </script>
 
-<h1>Student Magazine</h1>
+<h1>IEEE Student Magazine</h1>
 <ul>
   {#each magazines as magazine, index}
     {#if index === 0}

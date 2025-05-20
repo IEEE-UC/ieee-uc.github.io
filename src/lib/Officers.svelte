@@ -7,17 +7,43 @@
   onMount(async () => {
     const response = await fetch('/src/editable-content/officers/officers.json');
     const data = await response.json();
-    officers = data.officers.map(officer => {
-      const imageExtensions = ['.jpg', '.jpeg', '.png'];
-      const imagePath = imageExtensions.some(ext => officer.image.toLowerCase().endsWith(ext))
-        ? `/src/editable-content/officers/pictures/${officer.image}`
-        : '/src/editable-content/officers/pictures/default.jpg';
-
-      return {
-        ...officer,
-        image: imagePath
-      };
-    });
+    const priority = [
+      'President',
+      'Vice President',
+      'Treasurer',
+      'Developmental Chair',
+      'Webmaster',
+      'Outreach Chair',
+      'Meetings Chair',
+      'Special Event Chair',
+      'Magazine Editor-in-Chief',
+      'Magazine Project Manager'
+    ];
+    officers = data.officers
+      .slice()
+      .sort((a, b) => {
+        // Use strict equality for role matching, fallback to includes for partial matches
+        const getPriorityIndex = (role) => {
+          let idx = priority.findIndex(p => role.trim().toLowerCase() === p.toLowerCase());
+          if (idx === -1) {
+            idx = priority.findIndex(p => role.toLowerCase().includes(p.toLowerCase()));
+          }
+          return idx === -1 ? priority.length : idx;
+        };
+        const aIdx = getPriorityIndex(a.role);
+        const bIdx = getPriorityIndex(b.role);
+        return aIdx - bIdx;
+      })
+      .map(officer => {
+        const imageExtensions = ['.jpg', '.jpeg', '.png'];
+        const imagePath = imageExtensions.some(ext => officer.image.toLowerCase().endsWith(ext))
+          ? `/src/editable-content/officers/pictures/${officer.image}`
+          : '/src/editable-content/officers/pictures/default.jpg';
+        return {
+          ...officer,
+          image: imagePath
+        };
+      });
   });
 
   function toggleSkills(index) {
@@ -31,13 +57,14 @@
 </script>
 
 <h1>Meet Our Officers</h1>
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 0 20vw;">
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px 30px; padding: 0 8vw;">
   {#each officers as officer, index}
-    <div style="text-align: center;">
+    <div style="text-align: center; width: calc(33.333% - 30px); max-width: 300px; min-width: 220px; margin: 40px;">
       <div style="display: flex; justify-content: center; align-items: center; overflow: hidden; width: 150px; height: 150px; border-radius: 50%; margin: 0 auto;">
         <img src={officer.image} alt={officer.name} style="object-fit: cover; width: 100%; height: 100%;" />
       </div>
-      <h2>{officer.role}: {officer.name}</h2>
+      <h2 style="margin-bottom:0;">{officer.role}</h2>
+      <h2 style="font-weight: normal;margin-top:0;">{officer.name}</h2>
       <p>{officer.major} - {officer.year}</p>
       <blockquote style="font-style: italic;">
         <p>"{officer.quote}"</p>
