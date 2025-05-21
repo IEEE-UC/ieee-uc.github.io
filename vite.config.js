@@ -1,7 +1,17 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import { defineConfig } from "vite";
+import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
-// https://vite.dev/config/
+// Set base for GitHub Pages deployment
 export default defineConfig({
-  plugins: [svelte()],
-})
+  base: "/",
+  plugins: [
+    svelte(),
+    viteStaticCopy({
+      targets: [
+        { src: "src/assets", dest: "src/" },
+        { src: "src/editable-content", dest: "src/" },
+      ],
+    }),
+  ],
+});

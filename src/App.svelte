@@ -5,28 +5,46 @@
   import Magazine from './lib/Magazine.svelte';
   import Contact from './lib/Contact.svelte';
   import Join from './lib/Join.svelte';
-  let currentPage = 'home';
+  import { onMount } from 'svelte';
+
+  let currentRoute = '/';
+
+  function navigate(path) {
+    window.history.pushState({}, '', path);
+    currentRoute = path;
+  }
+
+  onMount(() => {
+    const updateRoute = () => {
+      currentRoute = window.location.pathname;
+    };
+    window.addEventListener('popstate', updateRoute);
+    updateRoute();
+    return () => window.removeEventListener('popstate', updateRoute);
+  });
 </script>
 
 <nav>
-  <button on:click={() => currentPage = 'home'}>IEEE</button>
-  <button on:click={() => currentPage = 'officers'}>Officers</button>
-  <button on:click={() => currentPage = 'magazine'}>IEEE Student Magazine</button>
-  <button on:click={() => currentPage = 'contact'}>Contact Us</button>
-  <button on:click={() => currentPage = 'calendar'}>Calendar</button>
+  <button on:click={() => navigate('/')}>IEEE</button>
+  <button on:click={() => navigate('/officers')}>Officers</button>
+  <button on:click={() => navigate('/magazine')}>IEEE Student Magazine</button>
+  <button on:click={() => navigate('/contact')}>Contact Us</button>
+  <button on:click={() => navigate('/calendar')}>Calendar</button>
   <button class="join-button" on:click={() => window.location.href = 'https://campuslink.uc.edu/organization/ieee'}>Join the Organization</button>
 </nav>
 
-{#if currentPage === 'home'}
-  <Home goToPage={(page) => currentPage = page} />
-{:else if currentPage === 'officers'}
+{#if currentRoute === '/'}
+  <Home goToPage={navigate} />
+{:else if currentRoute === '/officers'}
   <Officers />
-{:else if currentPage === 'calendar'}
+{:else if currentRoute === '/calendar'}
   <Calendar />
-{:else if currentPage === 'magazine'}
+{:else if currentRoute === '/magazine'}
   <Magazine />
-{:else if currentPage === 'contact'}
+{:else if currentRoute === '/contact'}
   <Contact />
+{:else}
+  <h2 style="text-align:center; margin-top:3rem;">404 - Page Not Found</h2>
 {/if}
 
 <style>
