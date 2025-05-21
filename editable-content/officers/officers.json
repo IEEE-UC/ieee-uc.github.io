@@ -1,0 +1,125 @@
+{
+  "officers": [
+    {
+      "image": "anay.jpg",
+      "name": "Anay Sehgal",
+      "role": "Special Event Chair",
+      "major": "Electrical and Computer Engineering",
+      "year": "Class of 2028",
+      "description": "Anay Sehgal loves to hang out to do math and physics problems and work out. You can find me in IEEE office hanging out with the IEEE people or on the 8th floor of Rhodes studying.",
+      "skills": "Python, java, Calculus 1,2,3,4, soldering, KiCad, VHDL, Verilog, C++, Microsoft Office Suite",
+      "quote": "Legends never die",
+      "quote_speaker": "Anay Sehgal"
+    },
+    {
+      "image": "jasmine.jpg",
+      "name": "Jasmine Mogadam",
+      "role": "Webmaster",
+      "major": "Computer Science",
+      "year": "Class of 2026",
+      "description": "Jasmine Mogadam loves learning new programming languages and tools, and just gaining new skills overall. She loves singing, gaming, DnD, animating, poetry, piano, and much more!",
+      "skills": "react, svelte, vue, angular, next, node, c, c++, C#, tomcat, flask, Live2D Cubism, prisma, postgres, mySQL, pyspark, REST, SOAP, GraphQL, postman, spring, express",
+      "quote": "A man who asks is a fool for five minutes. A man who never asks is a fool for life.",
+      "quote_speaker": "Unknown"
+    },
+    {
+      "image": "forrest.jpg",
+      "name": "Forrest Bushstone",
+      "role": "Meetings Chair",
+      "major": "Cybersecurity Engineering",
+      "year": "Class of 2026",
+      "description": "Forrest Bushstone is currently on co-op with Huntington Ingalls Industries and has previously co-oped at Northrop Grumman. Some of Forrest’s hobbies are singing, working out, programming, and cooking.",
+      "skills": "C/C++, x64 Assembly, Circuit Analysis, Verilog, Soldering",
+      "quote": "Some people see the glass half full. Others see it half empty. I see a glass that’s twice as big as it needs to be.",
+      "quote_speaker": "Unknown"
+    },
+    {
+      "image": "kevin.jpg",
+      "name": "Kevin Horstman",
+      "role": "Vice President",
+      "major": "Electrical Engineering",
+      "year": "Class of 2027",
+      "description": "Kevin Horstman has co-opted with Bluehalo for 2 years at Wrigh-Patterson Airforce Base for AFRL and is currently going to co-op at Yasakawa Motoman to work in robotics for summer of 2025. Fun facts about Kevin are that he loves to work electrical and electronic projects in his free time, he also loves to cook and play video games as well in his free time.",
+      "skills": "Solid Works, Fusion 360, 3d Printing, PCB Design, Soldering, Circuit Analysis",
+      "quote": "To fail is to learn and to not fail is to not learn.",
+      "quote_speaker": "Unknown"
+    },
+    {
+      "image": "sai.jpeg",
+      "name": "Sai Vivek Kambam",
+      "role": "Treasurer",
+      "major": "Computer Science",
+      "year": "Class of 2028",
+      "description": "Sai Vivek Kambam likes learning about new things (such as military history), painting, and cats.",
+      "skills": "Python, soldering and wiring, c++, basic SQL and linux command line",
+      "quote": "Opportunities multiply as they are seized",
+      "quote_speaker": "Sun Tzu"
+    },
+    {
+      "image": "youssef.jpg",
+      "name": "Youssef Elkady",
+      "role": "Developmental Chair",
+      "major": "Computer Engineering",
+      "year": "Class of 2029",
+      "description": "Youssef Elkady is co-oping with Kinetic Vision's Machine Learning team. He loves tinkering, hackathons, playing squash, and reading. You can normally find him in the Baldwin library or the Rec Center squash court.",
+      "skills": "Machine Learning, Embedded Systems , Python, C++",
+      "quote": "There are no shortcuts to any place worth going",
+      "quote_speaker": "Beverly Sills"
+    },
+    {
+      "image": "quan2.jpg",
+      "name": "Quan Le",
+      "role": "Special Event Chair",
+      "major": "Electrical Engineering",
+      "year": "Class of 2026",
+      "description": "Quan Le is in an ACCEND program in Semiconductor Fabrication. He has co-op'd at Weiss Technik, Cenovus Energy, and currently Electronauts. He loves to cook, play games, do simracing, bike, and various outdoor activities.",
+      "skills": "soldering, circuit design, calculus",
+      "quote": "Granny shiftin' not double clutchin' like you should. You're lucky that hundred shot of NOS didn't blow the welds on the intake!",
+      "quote_speaker": "Unknown"
+    },
+    {
+      "image": "adam.png",
+      "name": "Adam Reckelhoff",
+      "role": "Outreach Chair",
+      "major": "Electrical Engineering",
+      "year": "Class of 2029",
+      "description": "Adam Reckelhoff is a third year transfer student coming from NKU. He loves running, dogs, weird music, manga, electronics, math, art/design and is a self taught 3d artist! Overall optimistic and loves talking to people. You can find him studying in the IEEE room, DAAP library, Lindner upper floors, or Clifton Court Hall. Feel free to reach out!!",
+      "skills": "Python, C++, Circuit Analysis, Calculus I + II, AutoCAD Drafting, Graphic Design, Blender, Running/Racing",
+      "quote": "If you are losing faith in human nature, go out and watch a marathon.",
+      "quote_speaker": "Kathrine Switzer"
+    },
+    {
+      "image": "ansh.jpg",
+      "name": "Ansh Mendiratta",
+      "role": "Magazine Project Manager",
+      "major": "Computer Science",
+      "year": "Class of 2028",
+      "description": "Ansh Mendiratta has willfully embraced unemployment. Today, he spends time enjoying things, such as Graphics Programming, instead of worrying about Web Development. Normally found living in the IEEE office.",
+      "skills": "Vulkan, OpenGL, Linear Algebra",
+      "quote": "Why are we still here? Just to suffer?",
+      "quote_speaker": "Metal Gear Solid V"
+    },
+    {
+      "image": "elaine.jpeg",
+      "name": "Elaine Mansour",
+      "role": "President",
+      "major": "Electrical Engineering",
+      "year": "Class of 2026",
+      "description": "She has co-oped with Northrop Grumman and is currently in on co-op at Enhanced Automation. She loves to cook, bake, and work on new projects. You can normally find her in one of her many study spots around campus or the IEEE office.",
+      "skills": "python, java, calculus, soldering",
+      "quote": "Life would be tragic if it weren’t funny.",
+      "quote_speaker": "Stephen Hawking"
+    },
+    {
+      "image": "metty.jpg",
+      "name": "Metty Ukey",
+      "role": "Magazine Editor-in-Chief",
+      "major": "Electrical Engineering",
+      "year": "Class of 2027",
+      "description": "Metty is in the class of 2027 for Electrical Engineering. She has co-oped with Duke Energy as a controls engineer and is currently on co-op with Intel as a process engineer. In her free time, she likes to play instruments (piano, ukulele), read and enjoy the outdoors.",
+      "skills": "Soldering, circuit, breadboard, calculus 1-3",
+      "quote": "Do not take life too seriously. You will never get out of it alive.",
+      "quote_speaker": "Elbert Hubbard"
+    }
+  ]
+}
