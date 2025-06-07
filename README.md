@@ -11,6 +11,7 @@ To learn more about how JSON works, you can refer to this [JSON tutorial](https:
 ## Local Development
 
 ```
+npm i
 npm run dev
 ```
 

@@ -24,29 +24,6 @@ button {
   cursor: pointer;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-
-nav button {
-  padding: 1rem 1.25rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-/* First child stays left-aligned */
-nav button:first-child {
-  margin-right: auto;
-}
-
-/* All items except first get pushed right */
-nav button:not(:first-child) {
-  margin-left: 1rem;
-}
-
 /* join button gets special styling */
 .join-button {
   padding: 1rem 1.25rem;
