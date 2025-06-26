@@ -53,7 +53,7 @@ This project is configured to deploy to GitHub Pages using the `gh-pages` branch
    npm run deploy
    ```
    This will build and publish the site to GitHub Pages.
-3. Visit the site at: `https://ieee-uc.github.io/ieee-uc-edu-website/`
+3. Visit the site at: `https://ieee-uc.github.io`
 
 **Note:**
 
