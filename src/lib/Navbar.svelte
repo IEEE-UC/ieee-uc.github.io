@@ -55,7 +55,7 @@
         on:click|preventDefault={() => {
           navigate("/calendar");
           setNavActive(false);
-        }}>Calendar</a
+        }}>Meetings</a
       >
     </li>
     <li class="nav__item">
@@ -91,7 +91,7 @@
   <a
     class="nav-link {currentRoute === '/calendar' ? 'active' : ''}"
     href="/calendar"
-    on:click|preventDefault={() => navigate("/calendar")}>Calendar</a
+    on:click|preventDefault={() => navigate("/calendar")}>Meetings</a
   >
   <a
     class="nav-link {currentRoute === '/contact' ? 'active' : ''}"
