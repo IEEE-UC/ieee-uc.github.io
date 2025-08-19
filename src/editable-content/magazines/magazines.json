@@ -1,14 +1,19 @@
 {
   "magazines": [
     {
-      "title": "Volume 1 | April 2019",
+      "title": "Volume 1 | Spring 2019",
       "date": "April 2019",
       "year": "2019"
     },
     {
-      "title": "Volume 3 | Number 2",
+      "title": "Volume 2 | Spring 2021",
       "date": "Spring 2021",
       "year": "2021"
+    },
+    {
+      "title": "Volume 3 | Spring 2022",
+      "date": "Spring 2022",
+      "year": "2022"
     },
     {
       "title": "Volume 4 | Spring 2023",
