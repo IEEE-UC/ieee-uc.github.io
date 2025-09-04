@@ -1,7 +1,3 @@
-<script>
-  import Calendar from "./Calendar.svelte";
-</script>
-
 <header>
   <h1>IEEE Student Chapter</h1>
   <p>University of Cincinnati</p>
@@ -25,7 +21,7 @@
     </p>
     <button
       class="join-button"
-      on:click={() => (window.location.href = "/calendar")}>calendar</button
+      on:click={() => (window.location.href = "/meetings")}>Meetings</button
     >
   </div>
   <img class="row-img" src="/src/assets/baldwin.png" alt="IEEE UC Banner" />

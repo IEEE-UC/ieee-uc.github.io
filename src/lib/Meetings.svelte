@@ -1,4 +1,12 @@
-<h1>Club Calendar</h1>
+<h1>Meetings</h1>
+<div class="attendance-form-container">
+  <a
+    href="https://docs.google.com/forms/d/1fFensKpxp1AtNu1klD0JGhr1pPLgETjyUCbBsGioEcc/preview"
+    class="attendance-form-btn"
+    target="_blank"
+    rel="noopener">Attendance Form</a
+  >
+</div>
 <div class="calendar-container">
   <iframe
     class="calendar-iframe"
@@ -13,7 +21,30 @@
 </div>
 
 <style>
+  .attendance-form-container {
+    display: flex;
+    justify-content: flex-start;
+    width: 90vw;
+    max-width: 900px;
+    margin: 0 auto 1rem auto;
+  }
+  .attendance-form-btn {
+    background: black;
+    color: #fff;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    transition: background 0.2s;
+    cursor: pointer;
+  }
+  .attendance-form-btn:hover {
+    background: rgb(45, 45, 45);
+  }
   .calendar-container {
+    border-radius: 16px;
     width: 90vw;
     max-width: 900px;
     height: calc(100vh - 200px);
