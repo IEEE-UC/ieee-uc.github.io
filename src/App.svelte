@@ -1,7 +1,7 @@
 <script>
   import Home from "./lib/Home.svelte";
   import Officers from "./lib/Officers.svelte";
-  import Calendar from "./lib/Calendar.svelte";
+  import Meetings from "./lib/Meetings.svelte";
   import Magazine from "./lib/Magazine.svelte";
   import Contact from "./lib/Contact.svelte";
   import Navbar from "./lib/Navbar.svelte";
@@ -36,8 +36,8 @@
     <Home />
   {:else if currentRoute === "/officers"}
     <Officers />
-  {:else if currentRoute === "/calendar"}
-    <Calendar />
+  {:else if currentRoute === "/meetings"}
+    <Meetings />
   {:else if currentRoute === "/magazine"}
     <Magazine />
   {:else if currentRoute === "/contact"}

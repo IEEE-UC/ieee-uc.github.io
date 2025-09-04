@@ -50,10 +50,10 @@
     </li>
     <li class="nav__item">
       <a
-        class="nav__link {currentRoute === '/calendar' ? 'active' : ''}"
-        href="/calendar"
+        class="nav__link {currentRoute === '/meetings' ? 'active' : ''}"
+        href="/meetings"
         on:click|preventDefault={() => {
-          navigate("/calendar");
+          navigate("/meetings");
           setNavActive(false);
         }}>Meetings</a
       >
@@ -89,9 +89,9 @@
     >IEEE Student Magazine</a
   >
   <a
-    class="nav-link {currentRoute === '/calendar' ? 'active' : ''}"
-    href="/calendar"
-    on:click|preventDefault={() => navigate("/calendar")}>Meetings</a
+    class="nav-link {currentRoute === '/meetings' ? 'active' : ''}"
+    href="/meetings"
+    on:click|preventDefault={() => navigate("/meetings")}>Meetings</a
   >
   <a
     class="nav-link {currentRoute === '/contact' ? 'active' : ''}"
