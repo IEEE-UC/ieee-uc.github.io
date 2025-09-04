@@ -8,6 +8,8 @@ This project includes a folder named `editable-content` located in the `src` dir
 
 To learn more about how JSON works, you can refer to this [JSON tutorial](https://www.w3schools.com/js/js_json_intro.asp).
 
+To change the meeting link go to [src/lib/Meetings.svelte](./src/lib/Meetings.svelte)
+
 ## Local Development
 
 ```
