@@ -3,6 +3,7 @@
   import LinkedInIcon from "./LinkedInIcon.svelte";
   import InstagramIcon from "./InstagramIcon.svelte";
   import DiscordIcon from "./DiscordIcon.svelte";
+  import XIcon from "./XIcon.svelte";
 </script>
 
 <footer class="footer">
@@ -31,6 +32,7 @@
         ariaLabel="Discord"
         color="#fff"
       />
+      <XIcon href="https://x.com/uc_ieee" ariaLabel="X/Twitter" color="#fff" />
     </div>
   </div>
 </footer>

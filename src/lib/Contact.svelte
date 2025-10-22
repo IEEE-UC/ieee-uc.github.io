@@ -3,6 +3,7 @@
   import LinkedInIcon from "./LinkedInIcon.svelte";
   import InstagramIcon from "./InstagramIcon.svelte";
   import DiscordIcon from "./DiscordIcon.svelte";
+  import XIcon from "./XIcon.svelte";
 
   const socials = [
     {
@@ -32,6 +33,13 @@
       desc: "Best way to get updates, interact with members, get help with homework, chat, and join game nights.",
       icon: DiscordIcon,
       ariaLabel: "Discord",
+    },
+    {
+      name: "X/Twitter",
+      url: "https://x.com/uc_ieee",
+      desc: "Another way to get your UC IEEE updates.",
+      icon: XIcon,
+      ariaLabel: "X/Twitter",
     },
   ];
 </script>
