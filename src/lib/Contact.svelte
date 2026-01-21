@@ -87,8 +87,7 @@
 
 <style>
   h1,
-  h2,
-  h3 {
+  h2 {
     margin-bottom: 0;
   }
   .contact-columns {
@@ -102,14 +101,6 @@
   .contact-emails {
     flex: 1 1 220px;
     min-width: 180px;
-  }
-  .contact-address h1 {
-    margin-bottom: 0.5rem;
-    font-size: 1.5rem;
-  }
-  .contact-emails h2 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
   }
   .contact-socials-grid {
     display: grid;
@@ -145,11 +136,6 @@
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.2rem;
-  }
-  .social-header .icon {
-    display: flex;
-    align-items: center;
-    font-size: 1.7rem;
   }
   .social-name {
     font-size: 1.1rem;

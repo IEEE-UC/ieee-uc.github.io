@@ -1,4 +1,6 @@
 <script>
+  import DiscordIcon from "./DiscordIcon.svelte";
+
   export let currentRoute;
   export let navActive;
   export let navigate;
@@ -101,6 +103,7 @@
 </nav>
 
 <div class="join-container">
+  <DiscordIcon href="https://discord.gg/qcgm3Fpjgt" color="black" size={32} />
   <button
     class="join-button"
     on:click={() =>
@@ -240,7 +243,9 @@
     position: fixed;
     top: 0;
     right: 0;
-    justify-content: right;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
     margin: 1.5rem;
     z-index: 1200;
   }

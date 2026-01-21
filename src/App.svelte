@@ -53,12 +53,4 @@
     min-height: 70vh; /* Adjust as needed to push footer down */
     padding: 2rem;
   }
-  .after-nav {
-    height: 4.5rem;
-  }
-  @media (min-width: 700px) {
-    .after-nav {
-      height: 5.5rem;
-    }
-  }
 </style>
