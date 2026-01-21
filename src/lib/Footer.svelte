@@ -64,20 +64,6 @@
     justify-content: center;
     margin-top: 0.5rem;
   }
-  .footer-icons a {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition:
-      color 0.2s,
-      transform 0.2s;
-    font-size: 1.5rem;
-  }
-  .footer-icons a:hover {
-    color: #ffb300;
-    transform: scale(1.15);
-  }
   @media (min-width: 700px) {
     .footer-content {
       flex-direction: row;

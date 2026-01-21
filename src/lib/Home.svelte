@@ -1,7 +1,12 @@
+<script>
+  import DiscordIcon from "./DiscordIcon.svelte";
+</script>
+
 <header>
   <h1>IEEE Student Chapter</h1>
   <p>University of Cincinnati</p>
-  <div>
+  <div class="header-buttons">
+    <DiscordIcon href="https://discord.gg/qcgm3Fpjgt" color="black" size={40} />
     <button
       class="join-button"
       on:click={() =>
@@ -57,6 +62,11 @@
     color: grey;
     margin: 0;
     margin-bottom: 1.25rem;
+  }
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
   .row {
     display: flex;
