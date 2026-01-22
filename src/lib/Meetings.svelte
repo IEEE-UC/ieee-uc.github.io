@@ -1,7 +1,7 @@
 <h1>Meetings</h1>
 <div class="attendance-form-container">
   <a
-    href="https://docs.google.com/forms/d/1fFensKpxp1AtNu1klD0JGhr1pPLgETjyUCbBsGioEcc/preview"
+    href="https://forms.gle/StyBLL4JRw53BDXo9"
     class="attendance-form-btn"
     target="_blank"
     rel="noopener">Attendance Form</a
