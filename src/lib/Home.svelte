@@ -1,5 +1,6 @@
 <script>
   import DiscordIcon from "./DiscordIcon.svelte";
+  import DiscordWidget from "./DiscordWidget.svelte";
 </script>
 
 <header>
@@ -8,7 +9,7 @@
   <div class="header-buttons">
     <DiscordIcon href="https://discord.gg/qcgm3Fpjgt" color="black" size={40} />
     <button
-      class="join-button"
+      class="action-button"
       on:click={() =>
         (window.location.href = "https://campuslink.uc.edu/organization/ieee")}
       >Join the Organization</button
@@ -16,16 +17,18 @@
   </div>
 </header>
 
+<DiscordWidget />
+
 <div class="row">
   <div class="row-text">
     <h2>Chapter Meetings</h2>
     <p>
       Bi-Weekly, Thursdays, 6:00-7:00 pm
       <br />
-      Campus Recreation Center 3210
+      Mantei, Room 427
     </p>
     <button
-      class="join-button"
+      class="action-button"
       on:click={() => (window.location.href = "/meetings")}>Meetings</button
     >
   </div>
@@ -38,7 +41,7 @@
     <h2>MakeUC</h2>
     <p>Annual Fall Hackathon run by IEEE</p>
     <button
-      class="join-button"
+      class="action-button"
       on:click={() => (window.location.href = "https://makeuc.io")}
       >makeuc.io</button
     >

@@ -2,7 +2,7 @@
 <div class="attendance-form-container">
   <a
     href="https://forms.gle/StyBLL4JRw53BDXo9"
-    class="attendance-form-btn"
+    class="action-button"
     target="_blank"
     rel="noopener">Attendance Form</a
   >
@@ -27,21 +27,6 @@
     width: 90vw;
     max-width: 900px;
     margin: 0 auto 1rem auto;
-  }
-  .attendance-form-btn {
-    background: black;
-    color: #fff;
-    padding: 0.5rem 1.2rem;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    text-decoration: none;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
-    transition: background 0.2s;
-    cursor: pointer;
-  }
-  .attendance-form-btn:hover {
-    background: rgb(45, 45, 45);
   }
   .calendar-container {
     border-radius: 16px;

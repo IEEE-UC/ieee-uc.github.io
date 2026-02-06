@@ -7,16 +7,28 @@
   export let setNavActive;
 </script>
 
-<!-- Hamburger trigger OUTSIDE nav so it's always visible -->
-<button
-  class="nav__trigger {navActive ? 'nav__trigger--active' : ''}"
-  aria-label="Toggle navigation"
-  on:click={() => setNavActive(!navActive)}
->
-  <span class="nav__bar"></span>
-  <span class="nav__bar"></span>
-  <span class="nav__bar"></span>
-</button>
+<div class="mobile-nav-container">
+  <!-- Hamburger trigger OUTSIDE nav so it's always visible -->
+  <button
+    class="nav__trigger {navActive ? 'nav__trigger--active' : ''}"
+    aria-label="Toggle navigation"
+    on:click={() => setNavActive(!navActive)}
+  >
+    <span class="nav__bar"></span>
+    <span class="nav__bar"></span>
+    <span class="nav__bar"></span>
+  </button>
+  <div class="join-container">
+    <DiscordIcon href="https://discord.gg/qcgm3Fpjgt" color="black" size={32} />
+    <button
+      class="action-button"
+      on:click={() =>
+        (window.location.href = "https://campuslink.uc.edu/organization/ieee")}
+      >Join the Organization</button
+    >
+  </div>
+</div>
+
 <!-- Mobile nav links -->
 <nav class="nav {navActive ? 'nav--active' : ''}">
   <ul class="nav__list">
@@ -100,17 +112,16 @@
     href="/contact"
     on:click|preventDefault={() => navigate("/contact")}>Contact Us</a
   >
+  <div class="desktop-join-container">
+    <DiscordIcon href="https://discord.gg/qcgm3Fpjgt" color="black" size={32} />
+    <button
+      class="action-button"
+      on:click={() =>
+        (window.location.href = "https://campuslink.uc.edu/organization/ieee")}
+      >Join the Organization</button
+    >
+  </div>
 </nav>
-
-<div class="join-container">
-  <DiscordIcon href="https://discord.gg/qcgm3Fpjgt" color="black" size={32} />
-  <button
-    class="join-button"
-    on:click={() =>
-      (window.location.href = "https://campuslink.uc.edu/organization/ieee")}
-    >Join the Organization</button
-  >
-</div>
 
 <div class="after-nav"></div>
 
@@ -124,7 +135,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.85);
+    background: white;
     z-index: 1000;
     transform: translateX(-100%);
     transition: transform 0.4s cubic-bezier(0.77, 0.2, 0.05, 1);
@@ -132,6 +143,7 @@
     flex-direction: column;
     align-items: flex-start;
     padding-top: 5.5rem;
+    border-right: 1px solid #eee;
   }
   .nav--active.nav {
     transform: translateX(0);
@@ -166,7 +178,7 @@
     opacity: 1;
   }
   .nav__trigger--active .nav__bar {
-    background: #fff; /* white when menu is open */
+    background: #222; /* black when menu is open */
   }
   .nav__trigger--active .nav__bar:nth-child(1) {
     transform: rotate(45deg) translate(7px, 7px);
@@ -190,11 +202,59 @@
   .nav__item {
     width: 100%;
   }
+  .nav__link,
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #222;
+    padding-bottom: 5px;
+  }
+
+  .nav__link::after,
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #222;
+    transition: width 0.3s ease-out;
+  }
+
+  .nav__link.active::after,
+  .nav-link.active::after {
+    width: calc(100% - 1.5rem);
+    animation: underline-draw 0.3s ease-out forwards;
+  }
+
+  .nav__link:not(.active)::after,
+  .nav-link:not(.active)::after {
+    animation: underline-erase 0.3s ease-in forwards;
+  }
+
+  @keyframes underline-draw {
+    from {
+      width: 0;
+    }
+    to {
+      width: calc(100% - 1.5rem);
+    }
+  }
+
+  @keyframes underline-erase {
+    from {
+      width: calc(100% - 1.5rem);
+    }
+    to {
+      width: 0;
+    }
+  }
+
   .nav__link {
     display: block;
     font-size: 2rem;
-    color: #fff;
-    text-decoration: none;
     opacity: 0;
     transition:
       opacity 0.5s,
@@ -215,13 +275,11 @@
     opacity: 1;
   }
   .nav__link.active {
-    text-decoration: underline;
-    color: #fff;
-    background: rgba(255, 255, 255, 0.08);
+    color: #222;
   }
   .nav__link:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.15);
+    color: #222;
+    background: rgba(0, 0, 0, 0.05);
   }
   .nav {
     transform: translateX(-100%);
@@ -255,6 +313,45 @@
   .desktop-nav {
     display: none;
   }
+
+  .desktop-join-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: auto;
+    margin-right: 2rem;
+  }
+
+  .mobile-nav-container {
+    display: none;
+  }
+
+  @media (max-width: 699px) {
+    .mobile-nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      z-index: 1200;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+
+    .join-container {
+      position: static;
+      margin: 0;
+    }
+
+    .nav__trigger {
+      position: static;
+    }
+  }
+
   @media (min-width: 700px) {
     nav {
       padding: 2rem;
@@ -273,10 +370,10 @@
       background: #fff;
       border-bottom: 1px solid #eee;
     }
-    nav .nav-link {
+    .nav-link {
       display: inline-block;
       margin-right: 1.5rem;
-      font-size: 1.1rem;
+      font-size: 1.25rem;
       color: #222;
       text-decoration: none;
       font-weight: 400; /* Not bold */
@@ -286,12 +383,11 @@
         background 0.2s,
         color 0.2s;
     }
-    nav .nav-link.active {
-      text-decoration: underline;
+    .nav-link.active {
       color: #222;
       background: #f0f0f0;
     }
-    nav .nav-link:hover {
+    .nav-link:hover {
       background: #eaeaea;
       color: #222;
     }

@@ -1,4 +1,9 @@
 {
+  "interest_form": {
+    "title": "Are you interested in having your writing published?",
+    "description": "The IEEE Student Magazine is a student-led magazine that publishes peer-reviewed research, projects, and experiences done by UC students. We accept articles from any UC students that cover passionate personal projects, outstanding coursework, and international, national, or local conferences.",
+    "link": "https://docs.google.com/forms/d/e/1FAIpQLSf_7MQid_qk3UvMftljqh6962lekoS_CzH5GV91k3c-sUzALQ/viewform"
+  },
   "magazines": [
     {
       "title": "Volume 1 | Spring 2019",
