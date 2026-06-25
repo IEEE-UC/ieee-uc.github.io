@@ -12,48 +12,48 @@
       "quote_speaker": "Anay Sehgal"
     },
     {
-      "image": "jasmine.jpg",
-      "name": "Jasmine Mogadam",
+      "image": "mezo.jpeg",
+      "name": "Elmoataz Abdellah",
       "role": "Webmaster",
       "major": "Computer Science",
-      "year": "Class of 2026",
-      "description": "Jasmine Mogadam loves learning new programming languages and tools, and just gaining new skills overall. She loves singing, gaming, DnD, animating, poetry, piano, and much more!",
-      "skills": "react, svelte, vue, angular, next, node, c, c++, C#, tomcat, flask, Live2D Cubism, prisma, postgres, mySQL, pyspark, REST, SOAP, GraphQL, postman, spring, express",
-      "quote": "A man who asks is a fool for five minutes. A man who never asks is a fool for life.",
-      "quote_speaker": "Unknown"
-    },
-    {
-      "image": "forrest.jpg",
-      "name": "Forrest Bushstone",
-      "role": "Meetings Chair",
-      "major": "Cybersecurity Engineering",
-      "year": "Class of 2026",
-      "description": "Forrest Bushstone is currently on co-op with Huntington Ingalls Industries and has previously co-oped at Northrop Grumman. Some of Forrest’s hobbies are singing, working out, programming, and cooking.",
-      "skills": "C/C++, x64 Assembly, Circuit Analysis, Verilog, Soldering",
-      "quote": "Some people see the glass half full. Others see it half empty. I see a glass that’s twice as big as it needs to be.",
-      "quote_speaker": "Unknown"
-    },
-    {
-      "image": "kevin.jpg",
-      "name": "Kevin Horstman",
-      "role": "Vice President",
-      "major": "Electrical Engineering",
       "year": "Class of 2027",
-      "description": "Kevin Horstman has co-opted with Bluehalo for 2 years at Wrigh-Patterson Airforce Base for AFRL and is currently going to co-op at Yasakawa Motoman to work in robotics for summer of 2025. Fun facts about Kevin are that he loves to work electrical and electronic projects in his free time, he also loves to cook and play video games as well in his free time.",
-      "skills": "Solid Works, Fusion 360, 3d Printing, PCB Design, Soldering, Circuit Analysis",
-      "quote": "To fail is to learn and to not fail is to not learn.",
-      "quote_speaker": "Unknown"
+      "description": "Elmoataz Abdellah has had numerous start-up knowledge in project building in an agile/ scrum style. Even expanded knowledge in AI-Human Collaboration research. He loves sports, competition, and an opportunity to expand knowledge on new upcoming tech challenges whether by networking or doing it by himself.",
+      "skills": "Python, Calculus, react, svelte, vue, angular, next, node, c, c++, C#, tomcat, flask, prisma, postgres, mySQL, REST, SOAP, GraphQL, postman, spring, express",
+      "quote": "Your pain is the breaking of the shell that encloses your understanding. It is the bitter potion by which the physician within you heals your sick self. Therefore, trust the physician and drink his remedy in silence and tranquility",
+      "quote_speaker": "Khalil Gibran"
+    },
+    {
+      "image": "akul.jpg",
+      "name": "Akul Jha",
+      "role": "Meetings Chair",
+      "major": "Computer Engineering & Electrical Engineering",
+      "year": "Class of 2029",
+      "description": "Akul Jha is a double majoring in Computer Engineering and Electrical Engineering; Currently volunteering at bioscience research lab. He lovesto draw, paint and travel.",
+      "skills": "C/C++, x64 Assembly, Circuit Analysis, Verilog, Soldering",
+      "quote": "If you don't take risks, you can't create a future.",
+      "quote_speaker": "Monkey D. Luffy"
     },
     {
       "image": "sai.jpeg",
-      "name": "Sai Vivek Kambam",
-      "role": "Treasurer",
+      "name": "Sai Vivek Reddy Kambam",
+      "role": "Vice President",
       "major": "Computer Science",
       "year": "Class of 2028",
-      "description": "Sai Vivek Kambam likes learning about new things (such as military history), painting, and cats.",
-      "skills": "Python, soldering and wiring, c++, basic SQL and linux command line",
-      "quote": "Opportunities multiply as they are seized",
-      "quote_speaker": "Sun Tzu"
+      "description": "Pursuring my masters through the ACCEND program and doing the cyber operations minor. He likes painting, animals, cooking, and coding.",
+      "skills": "Python, C++, calculus",
+      "quote": "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
+      "quote_speaker": "Malcolm X"
+    },
+    {
+      "image": "Torin.jpg",
+      "name": "Torin Reid",
+      "role": "Treasurer",
+      "major": "Electrical Engineering",
+      "year": "Class of 2027",
+      "description": "Torin Reid has co-oped at Standex Electronics and currently co-ops at Marque Engineering. He likes to cook, exercise, learn about business, and is a huge Warhammer fan.",
+      "skills": "Lighting & Power Design, Circuiting",
+      "quote": "No man becomes rich unless he enriches others",
+      "quote_speaker": "Andrew Carnegie"
     },
     {
       "image": "youssef.jpg",
@@ -83,10 +83,10 @@
       "role": "Outreach Chair",
       "major": "Electrical Engineering",
       "year": "Class of 2029",
-      "description": "Adam Reckelhoff is a third year transfer student coming from NKU. He loves running, dogs, weird music, manga, electronics, math, art/design and is a self taught 3d artist! Overall optimistic and loves talking to people. You can find him studying in the IEEE room, DAAP library, Lindner upper floors, or Clifton Court Hall. Feel free to reach out!!",
+      "description": "Adam Reckelhoff loves running, dogs, weird music, manga, electronics, math, art/design and is a self taught 3d artist! Overall optimistic and loves talking to people. You can find him studying in the IEEE room, DAAP library, Lindner upper floors, CATS Lounge, or Clifton Court Hall. Feel free to reach out!!",
       "skills": "Python, C++, Circuit Analysis, Calculus I + II, AutoCAD Drafting, Graphic Design, Blender, Running/Racing",
-      "quote": "If you are losing faith in human nature, go out and watch a marathon.",
-      "quote_speaker": "Kathrine Switzer"
+      "quote": "Never stop learning, those who stop learning stop living.",
+      "quote_speaker": "Prime Newton"
     },
     {
       "image": "ansh.jpg",
@@ -100,15 +100,15 @@
       "quote_speaker": "Metal Gear Solid V"
     },
     {
-      "image": "elaine.jpeg",
-      "name": "Elaine Mansour",
+      "image": "kevin.jpg",
+      "name": "Kevin Horstman",
       "role": "President",
       "major": "Electrical Engineering",
-      "year": "Class of 2026",
-      "description": "She has co-oped with Northrop Grumman and is currently in on co-op at Enhanced Automation. She loves to cook, bake, and work on new projects. You can normally find her in one of her many study spots around campus or the IEEE office.",
-      "skills": "python, java, calculus, soldering",
-      "quote": "Life would be tragic if it weren’t funny.",
-      "quote_speaker": "Stephen Hawking"
+      "year": "Class of 2027",
+      "description": "Kevin Horstman has co-opted with Bluehalo for 2 years at Wrigh-Patterson Airforce Base for AFRL and is currently going to co-op at Yasakawa Motoman to work in robotics for summer of 2025. Fun facts about Kevin are that he loves to work electrical and electronic projects in his free time, he also loves to cook and play video games as well in his free time.",
+      "skills": "Solid Works, Fusion 360, 3d Printing, PCB Design, Soldering, Circuit Analysis",
+      "quote": "To fail is to learn and to not fail is to not learn.",
+      "quote_speaker": "Unknown"
     },
     {
       "image": "metty.jpg",
