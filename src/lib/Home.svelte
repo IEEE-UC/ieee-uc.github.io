@@ -23,9 +23,9 @@
   <div class="row-text">
     <h2>Chapter Meetings</h2>
     <p>
-      Bi-Weekly, Thursdays, 6:00-7:00 pm
+      Bi-Weekly, Tuesday, 6:00-7:00 pm
       <br />
-      Mantei, Room 427
+      Cincinnati Recreation Center, Room 3240
     </p>
     <button
       class="action-button"
